@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #222;
+}
+
+.container {
+  background-color: #333333;
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container.top {
+  margin-bottom: 0;
+}
+
+.container.bottom {
+  margin-top: 0;
+}
+
+.fill {
+  position: relative;
+  height: 133.3px;
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid #333333;
+  background-image: url("https://source.unsplash.com/random/600x400");
+}
+
+.filled {
+  display: inline-block;
+  height: 133.3px;
+  width: 200px;
+}
+
+.empty {
+  display: inline-block;
+  height: 133.3px;
+  width: 200px;
+  background-color: #333333;
+  transition: all 0.3s ease-in-out;
+}
+
+.item0 {
+  background-color: #444;
+}
+.item1 {
+  grid-area: 1 / 1 / 1 / 1;
+}
+.item2 {
+  grid-area: 1 / 2 / 1 / 2;
+}
+.item3 {
+  grid-area: 1 / 3 / 1 / 3;
+}
+.item4 {
+  grid-area: 2 / 1 / 2 / 1;
+}
+.item5 {
+  grid-area: 2 / 2 / 2 / 2;
+}
+.item6 {
+  grid-area: 2 / 3 / 2 / 3;
+}
+.item7 {
+  grid-area: 3 / 1 / 3 / 1;
+}
+.item8 {
+  grid-area: 3 / 2 / 3 / 2;
+}
+.item9 {
+  grid-area: 3 / 3 / 3 / 3;
+}
+
+.img1 {
+  background-position: top left;
+}
+
+.img2 {
+  background-position: top center;
+}
+
+.img3 {
+  background-position: top right;
+}
+
+.img4 {
+  background-position: center left;
+}
+
+.img5 {
+  background-position: center center;
+}
+
+.img6 {
+  background-position: center right;
+}
+
+.img7 {
+  background-position: bottom left;
+}
+
+.img8 {
+  background-position: bottom center;
+}
+
+.img9 {
+  background-position: bottom right;
+}
+
+.hold {
+  border: 3px solid gray;
+}
+
+.invisible {
+  display: none;
+}
+
+.hover {
+  background-color: #888;
+  border: 1px solid #333;
+}
+
+.menu {
+  grid-column: 2 / span 2;
+  background-color: #333;
+  padding: 2rem;
+  width: 400px;
+}
+
+.menu .btn {
+  border: none;
+  background-color: lightcoral;
+  color: aliceblue;
+  padding: 0.7rem 2rem 0.7rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .btn:hover {
+  -webkit-box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.4);
+}
