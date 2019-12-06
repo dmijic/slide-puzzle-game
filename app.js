@@ -51,16 +51,12 @@ function dragDrop(e) {
 }
 
 function newGame() {
-  alert("new game");
   for (i = 1; i < 10; i++) {
     index[i - 1] = i;
   }
-  console.log(index);
   index = shuffle(index);
-  console.log(index);
   i = 0;
   filledBoxes.forEach(box => {
-    console.log(index[i]);
     box.firstElementChild.classList = "fill img" + index[i];
     i++;
   });
